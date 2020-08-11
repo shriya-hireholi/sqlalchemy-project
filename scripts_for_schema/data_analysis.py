@@ -75,7 +75,6 @@ def matches_team_season():
             team_two, 0)+1
 
     teams_season = dict(sorted(teams_season.items()))
-    print(teams_season)
 
     with open("../json_data_files/TeamsSeasonsGames.json", "w") as fp:
         json.dump(teams_season, fp)
